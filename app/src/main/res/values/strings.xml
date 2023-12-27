@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Widoki</string>
+
+    <string name="yes">Tak</string>
+    <string name="no">Nie</string>
+
+    <string name="next">Dalej</string>
+    <string name="back">Cofnij</string>
+
+    <string name="name">Imię i nazwisko</string>
+    <string name="name_shortening">Skracanie nazwiska</string>
+    <string name="name_unspecified">(nie podano)</string>
+
+    <string name="adult">Osoba pełnoletnia</string>
+
+    <string name="gender">Płeć</string>
+    <string name="gender_woman">Kobieta</string>
+    <string name="gender_man">Mężczyzna</string>
+    <string name="gender_other">Inna</string>
+    <string name="gender_unspecified">(nieokreślona)</string>
+</resources>

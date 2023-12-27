@@ -1,0 +1,64 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/name"
+        android:autofillHints="name"
+        android:inputType="textPersonName" />
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/switchCompatName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextName"
+        android:layout_marginStart="6dp"
+        android:text="@string/name_shortening"
+        android:checked="false" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupGender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/switchCompatName"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radioButtonGenderWoman"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/gender_woman" />
+
+        <RadioButton
+            android:id="@+id/radioButtonGenderMan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/gender_man" />
+
+        <RadioButton
+            android:id="@+id/radioButtonGenderOther"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/gender_other" />
+    </RadioGroup>
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/adult"
+        android:layout_below="@id/radioGroupGender" />
+
+    <Button
+        android:id="@+id/buttonNext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/next"
+        android:layout_below="@id/checkBox" />
+
+</RelativeLayout>
